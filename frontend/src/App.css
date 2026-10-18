@@ -1,0 +1,186 @@
+```css
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #17243b;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Main application */
+.app {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  color: #1f2937;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  overflow-wrap: anywhere;
+}
+
+/* Headings */
+.app h1 {
+  margin: 0 0 8px;
+  color: #1d4ed8;
+  font-size: clamp(26px, 5vw, 36px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.app h2,
+.app h3 {
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+
+.app p {
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Forms and buttons */
+.app input,
+.app button,
+.app textarea {
+  max-width: 100%;
+  font: inherit;
+}
+
+.app input[type="file"] {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.app button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.app button:hover {
+  background: #1d4ed8;
+}
+
+/* Uploaded document content */
+.app section {
+  width: 100%;
+  min-width: 0;
+  margin-top: 24px;
+}
+
+.app pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  padding: 14px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Chat panel */
+.chat-panel {
+  width: 100%;
+  min-width: 0;
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.chat-panel textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.chat-answer {
+  margin-top: 24px;
+  overflow-wrap: anywhere;
+}
+
+.chat-answer article {
+  margin-top: 12px;
+  padding: 12px;
+  border-left: 3px solid #2563eb;
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.chat-answer article p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .app {
+    width: calc(100% - 32px);
+    margin: 24px auto;
+    padding: 24px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .app {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .app h1 {
+    font-size: 28px;
+  }
+
+  .app h2 {
+    font-size: 21px;
+  }
+
+  .app h3 {
+    font-size: 17px;
+  }
+
+  .app p {
+    font-size: 14px;
+  }
+
+  .app button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .chat-panel {
+    padding: 14px;
+  }
+
+  .app pre {
+    font-size: 12px;
+  }
+}
+```
